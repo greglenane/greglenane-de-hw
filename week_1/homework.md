@@ -29,16 +29,16 @@ SELECT
 	COUNT(*)
 FROM ny_taxi_data
 WHERE 
-	lpep_pickup_datetime >= DATE '2019-10-01' AND
-	lpep_dropoff_datetime < DATE '2019-11-01' AND
+	CAST(lpep_pickup_datetime AS DATE) >= DATE '2019-10-01' AND
+	CAST(lpep_dropoff_datetime AS DATE) < DATE '2019-11-01' AND
 	trip_distance <= 1;
 
 SELECT 
 	COUNT(*)
 FROM ny_taxi_data
 WHERE 
-	lpep_pickup_datetime >= DATE '2019-10-01' AND
-	lpep_dropoff_datetime < DATE '2019-11-01' AND
+	CAST(lpep_pickup_datetime AS DATE) >= DATE '2019-10-01' AND
+	CAST(lpep_dropoff_datetime AS DATE) < DATE '2019-11-01' AND
 	trip_distance > 1 AND
 	trip_distance <= 3;
 
@@ -46,8 +46,8 @@ SELECT
 	COUNT(*)
 FROM ny_taxi_data
 WHERE 
-	lpep_pickup_datetime >= DATE '2019-10-01' AND
-	lpep_dropoff_datetime < DATE '2019-11-01' AND
+	CAST(lpep_pickup_datetime AS DATE) >= DATE '2019-10-01' AND
+	CAST(lpep_dropoff_datetime AS DATE) < DATE '2019-11-01' AND
 	trip_distance > 3 AND
 	trip_distance <= 7;
 
@@ -55,8 +55,8 @@ SELECT
 	COUNT(*)
 FROM ny_taxi_data
 WHERE 
-	lpep_pickup_datetime >= DATE '2019-10-01' AND
-	lpep_dropoff_datetime < DATE '2019-11-01' AND
+	CAST(lpep_pickup_datetime AS DATE) >= DATE '2019-10-01' AND
+	CAST(lpep_dropoff_datetime AS DATE) < DATE '2019-11-01' AND
 	trip_distance > 7 AND
 	trip_distance <= 10;
 
@@ -64,11 +64,11 @@ SELECT
 	COUNT(*)
 FROM ny_taxi_data
 WHERE 
-	lpep_pickup_datetime >= DATE '2019-10-01' AND
-	lpep_dropoff_datetime < DATE '2019-11-01' AND
+	CAST(lpep_pickup_datetime AS DATE) >= DATE '2019-10-01' AND
+	CAST(lpep_dropoff_datetime AS DATE) < DATE '2019-11-01' AND
 	trip_distance > 10;
 ```
-ANSWER:
+ANSWER: 104,802; 198,924; 109,603; 27,678; 35,189
 
 ### Question 4. Longest trip for each day
 ```
