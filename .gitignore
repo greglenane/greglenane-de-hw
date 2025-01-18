@@ -6,3 +6,5 @@ week_1/terraform.tfstate
 week_1/terraform.tfstate.backup
 week_1/.terraform
 week_1/.terraform.lock.hcl
+
+test/
