@@ -7,7 +7,7 @@
 ### Question 2
 {{inputs.taxi}}_tripdata_{{inputs.year}}-{{inputs.month}}.csv
 
-once we render file then this scenario would result in gree_tripdata_2020-04
+once we ```{{render(vars.file)}}``` then this scenario would result in gree_tripdata_2020-04
 
 ### Question 3
 ```
@@ -25,10 +25,15 @@ select
 from zoomcamp.green_tripdata 
 where substr(filename, 16, 4) = '2020';
 ```
-1,734,051
+ANSWER: 1,734,051
 
 ### Question 5
-
+```
+select count(*)
+from zoomcamp.yellow_tripdata
+where substr(filename, 17, 7) = '2021-03'
+```
+ANSWER: 1,925,152
 
 ### Question 6
 [Kestra trigger scheduling](https://kestra.io/docs/workflow-components/triggers/schedule-trigger)
