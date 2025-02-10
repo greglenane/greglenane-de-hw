@@ -1,5 +1,4 @@
 week_1/*.csv
-week_1/.ipynb_checkpoints
 week_1/data_pgadmin
 week_1/ny_taxi_postgres_data
 week_1/terraform.tfstate
@@ -8,3 +7,6 @@ week_1/.terraform
 week_1/.terraform.lock.hcl
 
 test/
+
+*.ipynb_checkpoints
+*.parquet
