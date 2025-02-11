@@ -10,3 +10,5 @@ test/
 
 *.ipynb_checkpoints
 *.parquet
+
+*.duckdb
