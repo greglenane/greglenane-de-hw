@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: ny-rides-gregl-446219
+    schema: zoomcamp
+    tables:
+      - name: yellow_tripdata
+      - name: green_tripdata
+      - name: fhv_tripdata
