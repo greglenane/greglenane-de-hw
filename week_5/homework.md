@@ -24,6 +24,7 @@ spark = SparkSession.builder \
 spark.version
 ```
 #### Outputs
+```
 Welcome to
       ____              __
      / __/__  ___ _____/ /__
@@ -34,7 +35,7 @@ Welcome to
 Using Scala version 2.12.18 (OpenJDK 64-Bit Server VM, Java 11.0.2)
 Type in expressions to have them evaluated.
 Type :help for more information.
-
+```
 '3.5.5'
 
 ### Question 2: Yellow October 2024
@@ -47,8 +48,15 @@ Code in 'homework.ipynb'
 
 ANSWER: 128,893 ~ 125,567
 
-### Question 4: 
+### Question 4: Longest trip
 Code in 'homework.ipynb'
 
 ANSWER: 162.62 ~ 162
 
+### Question 5: User Interface
+ANSWER: 4040
+
+### Question 6: Least frequent pickup location zone
+Code in 'homework.ipynb'
+
+ANSWER: Governor's Island/Ellis Island/Liberty Island
